@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nidhish Singhal Portfolio</title>
+    <!-- creating viewpoint  -->
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- bootstrap javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- custom bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- font awsome -->
+    <script src="https://use.fontawesome.com/62db1f9eca.js"></script>
+  </head>
+  <body>
+    <!-- header including logo and name  -->
+    <header class="row">
+      
+      <div class="col-6 col-s-6">
+        <img class="img1" src="image/logo.png" id="logo" alt="ironLife Logo" >
+      </div>
+      <div class="col-6 col-s-6">
+        <h1>Nidhish Singhal</h1>
+        <h4>Front End Web Developer</h4>
+      </div>
+      
+    </header>
+    <!-- navbar for feature and contacts -->
+    <ul>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    
+    <!-- section containing the images section and the featured work included -->
+    <section >
+      <div class="row">
+        
+        <div class="col-12 col-s-12">
+          <img  class="" src="image/anna-pelzer-500769-unsplash.jpg" alt="image1">
+        </div>
+      </div>
+      <h2  id="featured">Featured Work</h2>
+      <div class="row marginRight">
+        
+        <div class="col-s-3 col-3">
+          <img class=""  src="image/anna-pelzer-500769-unsplash1024.jpeg" alt="image2">
+          <h3>Project One</h3>
+          <p>Udacity Front-end Web development Nanodegree.</p>
+          <a href="http://www.github.com/NIDHISH99444">www.github.com</a>
+        </div>
+        <div class="col-s-3 col-3">
+          <img class=""  src="image/autumn-goodman-242803-unsplash1024.jpeg" alt="image3">
+          <h3>Project Two</h3>
+          <p>Udacity Front-end Web development Nanodegree.</p>
+          <a href="http://www.github.com/NIDHISH99444">www.github.com</a>
+        </div>
+        <div class="col-s-3 col-3">
+          <img class=""  src="image/rsz_sam-sabourin-481686-unsplash1024.jpg" alt="image4">
+          <h3>Project Three</h3>
+          <p>Udacity Front-end Web development Nanodegree.</p>
+          <a href="http://www.github.com/NIDHISH99444">www.github.com</a>
+        </div>
+      </div>
+    </section>
+    <!-- footer including links to various contact sections  -->
+    <footer  class="footer" id="contact">
+      <ul id="horizontal-list">
+        <li><a href="https://github.com/NIDHISH99444" target="blank"><i class="fa fa-github-alt fa-2x"></i></a>
+      </li>
+      <li><a href="https://www.facebook.com/nidhish.singhal.52" target="blank"><i class="fa fa-facebook fa-2x"></i></a>
+    </li>
+    <li><a href="https://www.linkedin.com/in/nidhishsinghal2801/" target="blank"><i class="fa fa-linkedin fa-2x"></i></a>
+  </li>
+  <li><a href="http://www.twitter.com" target="blank"><i class="fa fa-twitter fa-2x"></i></a>
+</li>
+</ul>
+</footer>
+<!-- javascript for page scroll on click on feature and contact on navbar -->
+<script>
+$('a[href*=\\#]').on('click', function(event){
+event.preventDefault();
+$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+});
+</script>
+</body>
+</html>
