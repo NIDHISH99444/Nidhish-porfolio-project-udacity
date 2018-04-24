@@ -1,2 +1,2 @@
 # Nidhish-porfolio-project-udacity
-Porfolio of profiles and work submittion
+  Designing a responsive web site using media query and the knowledge of html, css and bootstrap
